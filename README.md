@@ -21,7 +21,10 @@ open it on your text editor
 
 create a pages folder this is where your web pages code go
 <br/>
+
 create an image folder where you will put your images
+
+<br/>
 Link the css and js to the index.html file
 
 You are required to create a pizza shop:
