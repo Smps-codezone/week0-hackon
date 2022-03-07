@@ -11,7 +11,7 @@ git clone https://github.com/Smps-codezone/week0-hackon.git
 ```
 then..
 ```#!/bin/bash
-cd weeko-hackon
+cd week0-hackon
 ```
 
 open it on your text editor
