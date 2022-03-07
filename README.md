@@ -20,6 +20,7 @@ open it on your text editor
 ### What you are required to accomplish
 
 create a pages folder this is where your web pages code go
+<br/>
 create an image folder where you will put your images
 Link the css and js to the index.html file
 
