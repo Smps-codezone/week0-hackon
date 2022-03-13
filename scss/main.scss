@@ -1,33 +1,18 @@
 @import 'navbar';
+@import '_contact';
+@import '_shop';
+@import'_base';
 
 * {
-  box-sizing: border-box;
+  // box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Kumbh Sans', sans-serif;
+  
+}
+html{
+  body{
+    background-color: black;
+  }
 }
 
-// Hero Section CSS
-.hero {
-    background-color: $light;
-  
-    &__container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
-      justify-items: center;
-      margin: 0 auto;
-      height: 90vh;
-      z-index: 1;
-      width: 100%;
-      max-width: 1200px;
-      padding-right: 24px;
-      padding-left: 24px;
-  
-      @include tablet {
-        grid-template-columns: 1fr;
-        height: 100%;
-      }
-
-    }
-  
