@@ -13,15 +13,56 @@
             <a href="/" class="navbar__logo">PIZZA SHOP</a>
             <div class="navbar__bars"><i class="fas fa-bars"></i></div>
             <div class="navbar__menu">
-              <a href="./index.html" class="navbar__menu--links">Home</a>
-              <a href="./pages/shop.html" class="navbar__menu--links">shop</a>
-              <a href="./pages/contact.html" class="navbar__menu--links">contact</a>
-              <a href="./pages/form.html" class="navbar__menu--links" id="button">order</a>
+              <a href="../index.html" class="navbar__menu--links">Home</a>
+              <a href="./shop.html" class="navbar__menu--links">shop</a>
+              <a href="./contact.html" class="navbar__menu--links">contact</a>
+              <a href="./form.html" class="navbar__menu--links" id="button">order</a>
             </div>
           </nav>
     </section>
     <section>
-
+      <img src="../images/pizza1.jpeg" width="1000" height="400"
+      alt="">
     </section>
+    <section>
+      <form action = "/cgi-bin/test.cgi" name = "myForm" onsubmit = "return(validate());">
+        <table cellspacing = "2" cellpadding = "2" border = "1">
+           
+           <tr>
+              <td align = "right">Name</td>
+              <td><input type = "text" name = "Name" /></td>
+           </tr>
+           
+           <tr>
+              <td align = "right">EMail</td>
+              <td><input type = "text" name = "EMail" /></td>
+           </tr>
+           
+           <tr>
+              <td align = "right">Zip Code</td>
+              <td><input type = "text" name = "Zip" /></td>
+           </tr>
+           
+           <tr>
+              <td align = "right">food type</td>
+              <td>
+                 <select name = "Country">
+                    <option value = "-1" selected>beef_pepperoni</option>
+                    <option value = "1">cheeseburge</option>
+                    <option value = "2">chicken-hawalian</option>
+                    <option value = "3">INDIA</option>
+                 </select>
+              </td>
+           </tr>
+           
+           <tr>
+              <td align = "right"></td>
+              <td><input type = "submit" value = "Submit" /></td>
+           </tr>
+        </table>
+     </form>      
+      
+    </section>
+    <script type = "main.js">js</script>>
 </body>
 </html>
