@@ -1,31 +1,20 @@
-// your scripts
-<script type = "text/javascript">
-   <!--
-      // Form validation code will come here.
-      function validate() {
-      
-         if( document.myForm.Name.value == "" ) {
-            alert( "Please provide your name!" );
-            document.myForm.Name.focus() ;
-            return false;
-         }
-         if( document.myForm.EMail.value == "" ) {
-            alert( "Please provide your Email!" );
-            document.myForm.EMail.focus() ;
-            return false;
-         }
-         if( document.myForm.Zip.value == "" || isNaN( document.myForm.Zip.value ) ||
-            document.myForm.Zip.value.length != 5 ) {
-            
-            alert( "Please provide a zip in the format #####." );
-            document.myForm.Zip.focus() ;
-            return false;
-         }
-         if( document.myForm.Country.value == "-1" ) {
-            alert( "Please provide your country!" );
-            return false;
-         }
-         return( true );
-      }
-   //-->
-</script>
+const formValidation = () => {
+  let fname = document.querySelector("#fname").value
+  let sname = document.querySelector("#sname").value
+  let phone = document.querySelector("#phone").value
+  let city = document.querySelector("#city").value
+  let house = document.querySelector("#house").value
+
+  if (
+    fname === "" ||
+    (fname == null && sname === "") ||
+    (sname == null && city === "") ||
+    (city == null && phone.length < 10 && city === "") ||
+    (city == null && house === "") ||
+    house == null
+  ) {
+    alert("All spaces must be filled")
+    return false
+  }
+  return true
+}
